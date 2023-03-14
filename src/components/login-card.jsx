@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const LoginCard = () => {
+  const navigate = useNavigate();
+
+  const handleSubmit = () => {
+    //Faltan validaciones y llamadas a la API
+    navigate("/home");
+  };
+
   return (
     <div className="bg-white px-10 py-20 rounded-3xl border-2 border-gray-200">
       <h1 className="text-5xl font-semibold"> Bienvenido</h1>
@@ -35,7 +43,10 @@ const LoginCard = () => {
           </button>
         </div>
         <div className="mt-8 flex flex-col gap-y-4">
-          <button className="active:scale-[.98] active:duration-100 hover:scale-[1.02] ease-in-out transition-all py-3 rounded-xl bg-general text-white text-lg font-bold">
+          <button
+            className="active:scale-[.98] active:duration-100 hover:scale-[1.02] ease-in-out transition-all py-3 rounded-xl bg-general text-white text-lg font-bold"
+            onClick={handleSubmit}
+          >
             Ingresar
           </button>
           <button className=" flex items-center justify-center border-2 border-gray-200 py-3 rounded-xl active:scale-[.98] active:duration-100 hover:scale-[1.02] ease-in-out transition-all">
