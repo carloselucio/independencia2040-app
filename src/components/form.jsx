@@ -17,7 +17,7 @@ const Form = () => {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="flex flex-col items-left max-w-4xl w-full">
+      <div className="flex flex-col items-left max-w-4xl w-4/5 lg:w-full">
         <div className="text-6xl font-bold mt-5"> Registro </div>
 
         {/* Datos personales */}
@@ -119,7 +119,7 @@ const Form = () => {
               value={value}
               onChange={handleValueChange}
               useRange={false}
-              primaryColor={"rose"}
+              primaryColor={"pink"}
             />
           </div>
 
@@ -321,6 +321,297 @@ const Form = () => {
               placeholder="Ingresa tu código postal"
               id="cp"
             />
+          </div>
+        </div>
+
+        <div className=" mt-14 flex flex-col items-left justify-left">
+          <div className="w-full rounded-xl p-4 mt-1 bg-general text-3xl text-white">
+            Familia
+          </div>
+
+          {/* Estado Civil padres */}
+          <div className="mt-5">
+            <label className="text-2xl font-medium">
+              Estado civil de los padres
+            </label>
+            <div className="w-full mt-3">
+              <Select
+                label="Estado civil"
+                color="pink"
+                id="estado-civil-padres"
+              >
+                <Option>Casados</Option>
+                <Option>Divorciados</Option>
+                <Option>Madre soltera</Option>
+                <Option>Padre</Option>
+                <Option>Separados</Option>
+                <Option>Soltero(a)</Option>
+                <Option>Unión Libre</Option>
+                <Option>Viudo(a)</Option>
+              </Select>
+            </div>
+          </div>
+
+          {/* Casa */}
+          <div className="mt-5">
+            <label className="text-2xl font-medium">Casa</label>
+            <div className="w-full mt-3">
+              <Select label="Casa" color="pink" id="status-casa">
+                <Option>Propia</Option>
+                <Option>Renta</Option>
+                <Option>Prestada</Option>
+                <Option>Cohabitada Fam. del padre</Option>
+                <Option>Cohabitada Fam. de la madre</Option>
+              </Select>
+            </div>
+          </div>
+
+          {/* No. de hermanos */}
+          <div className="mt-5">
+            <label className="text-2xl font-medium">Número de hermanos</label>
+            <div className="w-full mt-3">
+              <Select label="No. Hermanos" color="pink" id="numero-hermanos">
+                <Option>1</Option>
+                <Option>2</Option>
+                <Option>3</Option>
+                <Option>4</Option>
+                <Option>5+</Option>
+              </Select>
+            </div>
+          </div>
+
+          {/* Registro civil */}
+          <div className="mt-5">
+            <label className="text-2xl font-medium"> Registro Civil</label>
+            <div className="flex gap-10 items-center justify-center w-full rounded-lg  mt-1 bg-generalYellow">
+              <Radio
+                id="registro-civil-si"
+                name="registro-civil"
+                label="SI"
+                color="pink"
+              />
+              <Radio
+                id="registro-civil-no"
+                name="registro-civil"
+                label="NO"
+                color="pink"
+              />
+            </div>
+          </div>
+
+          {/* Foto acta de nacimiento */}
+          <div className="mt-5">
+            <label className="text-2xl font-medium">
+              Foto acta de nacimiento
+            </label>
+            <div className="flex gap-10 items-center justify-center w-full rounded-lg  mt-1 bg-generalYellow">
+              <Radio
+                id="foto-acta-si"
+                name="foto-acta"
+                label="SI"
+                color="pink"
+              />
+              <Radio
+                id="foto-acta-no"
+                name="foto-acta"
+                label="NO"
+                color="pink"
+              />
+            </div>
+          </div>
+
+          {/* Familia de confianza */}
+          <div className="mt-5">
+            <label className="text-2xl font-medium">Familia de confianza</label>
+            <div className="flex gap-10 items-center justify-center w-full rounded-lg  mt-1 bg-generalYellow">
+              <Radio
+                id="familia-confianza-si"
+                name="familia-confianza"
+                label="SI"
+                color="pink"
+              />
+              <Radio
+                id="familia-confianza-no"
+                name="familia-confianza"
+                label="NO"
+                color="pink"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className=" mt-14 flex flex-col items-left justify-left">
+          <div className="w-full rounded-xl p-4 mt-1 bg-general text-3xl text-white">
+            Salud
+          </div>
+
+          {/* Hospital nacimiento */}
+          <div className="mt-5">
+            <label className="text-2xl font-medium">
+              Hospital de nacimiento
+            </label>
+            <input
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+              placeholder="Ingresa hospital de nacimiento"
+              id="hospital-nacimiento"
+            />
+          </div>
+
+          {/* Peso */}
+          <div className="mt-5">
+            <label className="text-2xl font-medium">Peso</label>
+            <input
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+              placeholder="Ingresa el peso"
+              id="peso"
+            />
+          </div>
+
+          {/* Estatura */}
+          <div className="mt-5">
+            <label className="text-2xl font-medium">Estatura</label>
+            <input
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+              placeholder="Ingresa la estatura"
+              id="estatura"
+            />
+          </div>
+
+          {/* Seguro Médico */}
+          <div className="mt-5">
+            <label className="text-2xl font-medium">Seguro Médico</label>
+            <div className="w-full mt-3">
+              <Select label="Seguro Médico" color="pink" id="seguro-medico">
+                <Option>IMMS</Option>
+                <Option>ISSSTE</Option>
+                <Option>Magisterio</Option>
+                <Option>Seguro Insabi</Option>
+                <Option>Seguro Privado</Option>
+                <Option>No tiene</Option>
+              </Select>
+            </div>
+          </div>
+
+          {/* Foto cartilla vacunación */}
+          <div className="mt-5">
+            <label className="text-2xl font-medium">
+              Foto cartilla vacunación
+            </label>
+            <div className="flex gap-10 items-center justify-center w-full rounded-lg  mt-1 bg-generalYellow">
+              <Radio
+                id="foto-cartilla-si"
+                name="foto-cartilla"
+                label="SI"
+                color="pink"
+              />
+              <Radio
+                id="foto-cartilla-no"
+                name="foto-cartilla"
+                label="NO"
+                color="pink"
+              />
+            </div>
+          </div>
+
+          {/* Vacunas */}
+          <div className="mt-5">
+            <div className="w-full rounded-xl p-2 mt-1 bg-general text-2xl text-white">
+              Vacunas
+            </div>
+
+            {/* BGC */}
+            <div className="mt-5">
+              <label className="text-2xl font-medium">Fecha vacuna BGC</label>
+              <Datepicker
+                asSingle={true}
+                value={value}
+                onChange={handleValueChange}
+                useRange={false}
+                primaryColor={"pink"}
+              />
+            </div>
+
+            {/* Hepatitis b al nacer */}
+            <div className="mt-5">
+              <label className="text-2xl font-medium">
+                Fecha vacuna Hepatitis B (al nacer)
+              </label>
+              <Datepicker
+                asSingle={true}
+                value={value}
+                onChange={handleValueChange}
+                useRange={false}
+                primaryColor={"pink"}
+              />
+            </div>
+
+            {/* Vacuna auditiva */}
+            <div className="mt-5">
+              <label className="text-2xl font-medium">Auditiva</label>
+              <div className="flex gap-10 items-center justify-center w-full rounded-lg  mt-1 bg-generalYellow">
+                <Radio
+                  id="vacuna-auditiva-si"
+                  name="vacuna-auditiva"
+                  label="SI"
+                  color="pink"
+                />
+                <Radio
+                  id="vacuna-auditiva-no"
+                  name="vacuna-auditiva"
+                  label="NO"
+                  color="pink"
+                />
+              </div>
+            </div>
+
+            {/* Vacuna  Tamiz*/}
+            <div className="mt-5">
+              <label className="text-2xl font-medium">Tamiz</label>
+              <div className="flex gap-10 items-center justify-center w-full rounded-lg  mt-1 bg-generalYellow">
+                <Radio
+                  id="vacuna-tamiz-si"
+                  name="vacuna-tamiz"
+                  label="SI"
+                  color="pink"
+                />
+                <Radio
+                  id="vacuna-tamiz-no"
+                  name="vacuna-tamiz"
+                  label="NO"
+                  color="pink"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className=" mt-14 flex flex-col items-left justify-left">
+          <div className="w-full rounded-xl p-4 mt-1 bg-general text-3xl text-white">
+            Espiritualidad
+          </div>
+
+          {/* Espiritualidad */}
+          <div className="mt-5">
+            <label className="text-2xl font-medium">Religión</label>
+            <div className="w-full mt-3">
+              <Select label="Religión" color="pink" id="religion">
+                <Option>Bautista</Option>
+                <Option>Católico</Option>
+                <Option>Cristiano</Option>
+                <Option>Evangélica Pentecostés</Option>
+                <Option>Mormón</Option>
+                <Option>Ninguna</Option>
+              </Select>
+            </div>
+          </div>
+
+          {/* Bautizo */}
+          <div className="mt-5">
+            <label className="text-2xl font-medium">Bautizo</label>
+            <div className="flex gap-10 items-center justify-center w-full rounded-lg  mt-1 bg-generalYellow">
+              <Radio id="bautizo-si" name="bautizo" label="SI" color="pink" />
+              <Radio id="bautizo-no" name="bautizo" label="NO" color="pink" />
+            </div>
           </div>
         </div>
       </div>
