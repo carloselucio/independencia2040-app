@@ -17,7 +17,7 @@ const Form = () => {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="flex flex-col items-left max-w-4xl w-4/5 lg:w-full">
+      <div className="flex flex-col items-left max-w-4xl w-4/5 lg:w-full mb-12">
         <div className="text-6xl font-bold mt-5"> Registro </div>
 
         {/* Datos personales */}
@@ -30,7 +30,7 @@ const Form = () => {
           <div className="mt-5">
             <label className="text-2xl font-medium">Nombre</label>
             <input
-              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 "
               placeholder="Ingresa tu nombre"
             />
           </div>
@@ -39,7 +39,7 @@ const Form = () => {
           <div className="mt-5">
             <label className="text-2xl font-medium">Apellido Paterno</label>
             <input
-              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 "
               placeholder="Ingresa tu apellido paterno"
             />
           </div>
@@ -48,7 +48,7 @@ const Form = () => {
           <div className="mt-5">
             <label className="text-2xl font-medium">Apellido Materno</label>
             <input
-              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 "
               placeholder="Ingresa tu apellido materno"
             />
           </div>
@@ -106,7 +106,7 @@ const Form = () => {
           <div className="mt-5">
             <label className="text-2xl font-medium">Teléfono</label>
             <input
-              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 "
               placeholder="Ingresa tu número telefónico"
             />
           </div>
@@ -200,7 +200,7 @@ const Form = () => {
           <div className="mt-5">
             <label className="text-2xl font-medium">Responsable</label>
             <input
-              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 "
               placeholder="Ingresa responsable"
               id="responsable"
             />
@@ -247,7 +247,7 @@ const Form = () => {
           <div className="mt-5">
             <label className="text-2xl font-medium">Estado</label>
             <input
-              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 "
               placeholder="Ingresa tu estado"
               id="estado"
             />
@@ -257,7 +257,7 @@ const Form = () => {
           <div className="mt-5">
             <label className="text-2xl font-medium">Municipio</label>
             <input
-              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 "
               placeholder="Ingresa tu municipio"
               id="municipio"
             />
@@ -267,7 +267,7 @@ const Form = () => {
           <div className="mt-5">
             <label className="text-2xl font-medium">Localidad</label>
             <input
-              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 "
               placeholder="Ingresa tu localidad"
               id="localidad"
             />
@@ -277,7 +277,7 @@ const Form = () => {
           <div className="mt-5">
             <label className="text-2xl font-medium">Colonia</label>
             <input
-              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 "
               placeholder="Ingresa tu colonia"
               id="colonia"
             />
@@ -287,7 +287,7 @@ const Form = () => {
           <div className="mt-5">
             <label className="text-2xl font-medium">Calle</label>
             <input
-              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 "
               placeholder="Ingresa tu calle"
               id="calle"
             />
@@ -297,7 +297,7 @@ const Form = () => {
           <div className="mt-5">
             <label className="text-2xl font-medium">Número interior</label>
             <input
-              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 "
               placeholder="Ingresa tu número interior"
               id="numeroInterior"
             />
@@ -307,7 +307,7 @@ const Form = () => {
           <div className="mt-5">
             <label className="text-2xl font-medium">Número exterior</label>
             <input
-              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 "
               placeholder="Ingresa tu número exterior"
               id="numeroExterior"
             />
@@ -317,7 +317,7 @@ const Form = () => {
           <div className="mt-5">
             <label className="text-2xl font-medium">Código Postal</label>
             <input
-              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 "
               placeholder="Ingresa tu código postal"
               id="cp"
             />
@@ -451,7 +451,7 @@ const Form = () => {
               Hospital de nacimiento
             </label>
             <input
-              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 "
               placeholder="Ingresa hospital de nacimiento"
               id="hospital-nacimiento"
             />
@@ -461,7 +461,7 @@ const Form = () => {
           <div className="mt-5">
             <label className="text-2xl font-medium">Peso</label>
             <input
-              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 "
               placeholder="Ingresa el peso"
               id="peso"
             />
@@ -471,7 +471,7 @@ const Form = () => {
           <div className="mt-5">
             <label className="text-2xl font-medium">Estatura</label>
             <input
-              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 "
               placeholder="Ingresa la estatura"
               id="estatura"
             />
@@ -625,7 +625,7 @@ const Form = () => {
           <div className="mt-5">
             <label className="text-2xl font-medium">Nombre</label>
             <input
-              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 "
               placeholder="Ingresa tu nombre"
               id="nombre-madre"
             />
@@ -635,7 +635,7 @@ const Form = () => {
           <div className="mt-5">
             <label className="text-2xl font-medium">Apellido Paterno</label>
             <input
-              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 "
               placeholder="Ingresa tu apellido paterno"
               id="apellido-paterno-madre"
             />
@@ -645,7 +645,7 @@ const Form = () => {
           <div className="mt-5">
             <label className="text-2xl font-medium">Apellido Materno</label>
             <input
-              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 "
               placeholder="Ingresa tu apellido materno"
               id="apellido-materno-madre"
             />
@@ -724,7 +724,7 @@ const Form = () => {
           <div className="mt-5">
             <label className="text-2xl font-medium">Teléfono</label>
             <input
-              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 "
               placeholder="Ingresa tu número telefónico"
               id="tel-madre"
             />
@@ -746,7 +746,7 @@ const Form = () => {
           <div className="mt-5">
             <label className="text-2xl font-medium">Estado civil</label>
             <div className="w-full mt-3">
-              <Select label="Estado civil" color="pink" id="estado-civil">
+              <Select label="Estado civil" color="pink" id="estado-civil-madre">
                 <Option>Casados</Option>
                 <Option>Divorciados</Option>
                 <Option>Madre soltera</Option>
@@ -1028,6 +1028,408 @@ const Form = () => {
         <div className="mt-14 flex flex-col items-left justify-left">
           <div className="w-full rounded-xl p-4 mt-1 bg-general text-3xl text-white">
             Datos Padre
+          </div>
+
+          {/* Nombre */}
+          <div className="mt-5">
+            <label className="text-2xl font-medium">Nombre</label>
+            <input
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1"
+              placeholder="Ingresa tu nombre"
+              id="nombre-padre"
+            />
+          </div>
+
+          {/* Apellido Paterno */}
+          <div className="mt-5">
+            <label className="text-2xl font-medium">Apellido Paterno</label>
+            <input
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1"
+              placeholder="Ingresa tu apellido paterno"
+              id="apellido-paterno-padre"
+            />
+          </div>
+
+          {/* Apellido Materno */}
+          <div className="mt-5">
+            <label className="text-2xl font-medium">Apellido Materno</label>
+            <input
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 "
+              placeholder="Ingresa tu apellido materno"
+              id="apellido-materno-padre"
+            />
+          </div>
+
+          {/* Foto */}
+          <div className="mt-5">
+            <label className="text-2xl font-medium"> Foto</label>
+            <div className="flex gap-10 items-center justify-center w-full rounded-lg mt-1 bg-generalYellow">
+              <Radio
+                id="foto-padre-si"
+                name="foto-padre"
+                label="SI"
+                color="pink"
+              />
+              <Radio
+                id="foto-padre-no"
+                name="foto-padre"
+                label="NO"
+                color="pink"
+              />
+            </div>
+          </div>
+
+          {/* Sexo */}
+          <div className="mt-5">
+            <label className="text-2xl font-medium"> Sexo</label>
+            <div className="flex gap-10 items-center justify-center w-full rounded-lg mt-1 bg-generalYellow">
+              <Radio
+                id="sex-padre-m"
+                name="sex-padre"
+                label="Masculino"
+                color="pink"
+              />
+              <Radio
+                id="sex-padre-f"
+                name="sex-padre"
+                label="Femenino"
+                color="pink"
+              />
+            </div>
+          </div>
+
+          {/* Persona 2040 */}
+          <div className="mt-5">
+            <label className="text-2xl font-medium"> Persona2040</label>
+            <div className="flex flex-col gap-10 items-center justify-center w-full rounded-lg sm:flex-row mt-1 bg-generalYellow">
+              <Radio
+                id="persona2040-padre-P2040"
+                name="persona2040-padre"
+                label="P2040"
+                color="pink"
+              />
+              <Radio
+                id="persona2040-padre-F2040"
+                name="persona2040-padre"
+                label="F2040"
+                color="pink"
+              />
+              <Radio
+                id="persona2040-padre-R2040"
+                name="persona2040-padre"
+                label="R2040"
+                color="pink"
+              />
+              <Radio
+                id="persona2040-padre-C2040"
+                name="persona2040-padre"
+                label="C2040"
+                color="pink"
+              />
+            </div>
+          </div>
+
+          {/* TEL */}
+          <div className="mt-5">
+            <label className="text-2xl font-medium">Teléfono</label>
+            <input
+              className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 "
+              placeholder="Ingresa tu número telefónico"
+              id="tel-padre"
+            />
+          </div>
+
+          {/* Fecha de nacimiento padre */}
+          <div className="mt-5">
+            <label className="text-2xl font-medium">Fecha de Nacimiento</label>
+            <Datepicker
+              asSingle={true}
+              value={value}
+              onChange={handleValueChange}
+              useRange={false}
+              primaryColor={"pink"}
+            />
+          </div>
+
+          {/* Estado Civil padre */}
+          <div className="mt-5">
+            <label className="text-2xl font-medium">Estado civil</label>
+            <div className="w-full mt-3">
+              <Select label="Estado civil" color="pink" id="estado-civil-padre">
+                <Option>Casados</Option>
+                <Option>Divorciados</Option>
+                <Option>Madre soltera</Option>
+                <Option>Padre</Option>
+                <Option>Separados</Option>
+                <Option>Soltero(a)</Option>
+                <Option>Unión Libre</Option>
+                <Option>Viudo(a)</Option>
+              </Select>
+            </div>
+          </div>
+
+          {/* Acompañamiento */}
+          <div className="mt-5">
+            <div className="w-full rounded-xl p-2 mt-1 bg-general text-2xl text-white">
+              Acompañamiento
+            </div>
+
+            {/* Estatus */}
+            <div className="mt-5">
+              <label className="text-2xl font-medium"> Estatus </label>
+              <div className="flex flex-col sm:flex-row gap-10 items-center justify-center w-full rounded-lg mt-1 bg-generalYellow">
+                <Radio
+                  id="estatus-acompanamiento-padre-activo"
+                  name="estatus-acompanamiento-padre"
+                  label="Activo"
+                  color="pink"
+                />
+                <Radio
+                  id="estatus-acompanamiento-padre-inactivo"
+                  name="estatus-acompanamiento-padre"
+                  label="Inactivo"
+                  color="pink"
+                />
+                <Radio
+                  id="estatus-acompanamiento-padre-contactar"
+                  name="estatus-acompanamiento-padre"
+                  label="Por contactar"
+                  color="pink"
+                />
+                <Radio
+                  id="estatus-acompanamiento-padre-fallecido"
+                  name="estatus-acompanamiento-padre"
+                  label="Fallecido"
+                  color="pink"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Salud padre */}
+          <div className="mt-5">
+            <div className="w-full rounded-xl p-2 mt-1 bg-general text-2xl text-white">
+              Salud
+            </div>
+
+            {/* Seguro Médico padre*/}
+            <div className="mt-5">
+              <label className="text-2xl font-medium">Seguro Médico</label>
+              <div className="w-full mt-3">
+                <Select
+                  label="Seguro Médico"
+                  color="pink"
+                  id="seguro-medico-padre"
+                >
+                  <Option>IMMS</Option>
+                  <Option>ISSSTE</Option>
+                  <Option>Magisterio</Option>
+                  <Option>Seguro Insabi</Option>
+                  <Option>Seguro Privado</Option>
+                  <Option>No tiene</Option>
+                </Select>
+              </div>
+            </div>
+          </div>
+
+          {/* Educación padre */}
+          <div className="mt-5">
+            <div className="w-full rounded-xl p-2 mt-1 bg-general text-2xl text-white">
+              Educación
+            </div>
+
+            {/* Nivel escolar padre*/}
+            <div className="mt-5">
+              <label className="text-2xl font-medium">Nivel escolar</label>
+              <div className="w-full mt-3">
+                <Select
+                  label="Nivel escolar"
+                  color="pink"
+                  id="nivel-escolar-padre"
+                >
+                  <Option>Primaria</Option>
+                  <Option>Secundaria</Option>
+                  <Option>Preparatoria</Option>
+                  <Option>Técnica</Option>
+                  <Option>Profesional</Option>
+                </Select>
+              </div>
+            </div>
+
+            {/* Estudiando */}
+            <div className="mt-5">
+              <label className="text-2xl font-medium"> Estudiando</label>
+              <div className="flex gap-10 items-center justify-center w-full rounded-lg mt-1 bg-generalYellow">
+                <Radio
+                  id="estudiando-padre-si"
+                  name="estudiando-padre"
+                  label="SI"
+                  color="pink"
+                />
+                <Radio
+                  id="estudiando-padre-no"
+                  name="estudiando-padre"
+                  label="NO"
+                  color="pink"
+                />
+              </div>
+            </div>
+
+            {/* Ultimo grado cursado */}
+            <div className="mt-5">
+              <label className="text-2xl font-medium">
+                Último grado cursado
+              </label>
+              <input
+                className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1"
+                placeholder="Ingresa el último grado cursado del padre"
+                id="ultimo-grado-padre"
+              />
+            </div>
+
+            {/* Carrera profesional padre */}
+            <div className="mt-5">
+              <label className="text-2xl font-medium">
+                Carrera profesional
+              </label>
+              <input
+                className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1"
+                placeholder="Ingresa la carrera profesional del padre"
+                id="carrera-padre"
+              />
+            </div>
+          </div>
+
+          {/* Empleo padre */}
+          <div className="mt-5">
+            <div className="w-full rounded-xl p-2 mt-1 bg-general text-2xl text-white">
+              Empleo
+            </div>
+
+            {/* Empleo padre*/}
+            <div className="mt-5">
+              <label className="text-2xl font-medium">Empleo</label>
+              <div className="w-full mt-3">
+                <Select label="Empleo padre" color="pink" id="empleo-padre">
+                  <Option>Ventas</Option>
+                  <Option>Construcción</Option>
+                  <Option>Gobierno</Option>
+                  <Option>Ama de casa</Option>
+                  <Option>Limpieza</Option>
+                  <Option>Estudiante</Option>
+                  <Option>Secretaria</Option>
+                  <Option>Chofer</Option>
+                  <Option>Comercio</Option>
+                  <Option>Recepcionista</Option>
+                  <Option>Cocinera</Option>
+                  <Option>Costurera</Option>
+                  <Option>Desempleado</Option>
+                  <Option>Industria</Option>
+                  <Option>Persona no económicamente activa</Option>
+                </Select>
+              </div>
+            </div>
+
+            {/* Ocupación padre*/}
+            <div className="mt-5">
+              <label className="text-2xl font-medium">Ocupación</label>
+              <div className="w-full mt-3">
+                <Select
+                  label="Ocupación padre"
+                  color="pink"
+                  id="ocupacion-padre"
+                >
+                  <Option>Ama de casa</Option>
+                  <Option>Empleado</Option>
+                  <Option>Estudiante</Option>
+                  <Option>Desempleado</Option>
+                </Select>
+              </div>
+            </div>
+
+            {/* Seguro Médico otorgado por la empresa */}
+            <div className="mt-5">
+              <label className="text-2xl font-medium">
+                Seguro médico otorgado por la empresa
+              </label>
+              <div className="flex gap-10 items-center justify-center w-full rounded-lg mt-1 bg-generalYellow">
+                <Radio
+                  id="seguro-medico-empresa-padre-si"
+                  name="seguro-medico-empresa-padre"
+                  label="SI"
+                  color="pink"
+                />
+                <Radio
+                  id="seguro-medico-empresa-padre-no"
+                  name="seguro-medico-empresa-padre"
+                  label="NO"
+                  color="pink"
+                />
+              </div>
+            </div>
+
+            {/* Posición laboral*/}
+            <div className="mt-5">
+              <label className="text-2xl font-medium">Posición Laboral</label>
+              <div className="w-full mt-3">
+                <Select
+                  label="Posición laboral padre"
+                  color="pink"
+                  id="posicion-laboral-padre"
+                >
+                  <Option>Empleado</Option>
+                  <Option>Empleador</Option>
+                  <Option>Trabajador por cuenta propia</Option>
+                  <Option>Trabajador sin salario fijo</Option>
+                </Select>
+              </div>
+            </div>
+
+            {/* Salario fijo mensual padre */}
+            <div className="mt-5">
+              <label className="text-2xl font-medium">
+                Salario fijo mensual
+              </label>
+              <input
+                className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1"
+                placeholder="Ingresa el salario fijo mensual del padre"
+                id="salario-mensual-padre"
+              />
+            </div>
+          </div>
+
+          {/* Espiritualidad padre */}
+          <div className="mt-5">
+            <div className="w-full rounded-xl p-2 mt-1 bg-general text-2xl text-white">
+              Espiritualidad
+            </div>
+
+            <div className="mt-5">
+              <label className="text-2xl font-medium">Religión</label>
+              <div className="w-full mt-3">
+                <Select label="Religión" color="pink" id="religion-padre">
+                  <Option>Bautista</Option>
+                  <Option>Católico</Option>
+                  <Option>Cristiano</Option>
+                  <Option>Evangélica Pentecostés</Option>
+                  <Option>Mormón</Option>
+                  <Option>Ninguna</Option>
+                </Select>
+              </div>
+            </div>
+
+            <div className="mt-5">
+              <label className="text-2xl font-medium">Catolicidad</label>
+              <div className="w-full mt-3">
+                <Select label="Catolicidad" color="pink" id="catolicidad-padre">
+                  <Option>Bautizo</Option>
+                  <Option>Comunión</Option>
+                  <Option>Confirmación</Option>
+                  <Option>Matrimonio</Option>
+                  <Option>Entronización</Option>
+                </Select>
+              </div>
+            </div>
           </div>
         </div>
       </div>
