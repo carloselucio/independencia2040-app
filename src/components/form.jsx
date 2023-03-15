@@ -988,6 +988,47 @@ const Form = () => {
               />
             </div>
           </div>
+
+          {/* Espiritualidad madre */}
+          <div className="mt-5">
+            <div className="w-full rounded-xl p-2 mt-1 bg-general text-2xl text-white">
+              Espiritualidad
+            </div>
+
+            <div className="mt-5">
+              <label className="text-2xl font-medium">Religión</label>
+              <div className="w-full mt-3">
+                <Select label="Religión" color="pink" id="religion-madre">
+                  <Option>Bautista</Option>
+                  <Option>Católico</Option>
+                  <Option>Cristiano</Option>
+                  <Option>Evangélica Pentecostés</Option>
+                  <Option>Mormón</Option>
+                  <Option>Ninguna</Option>
+                </Select>
+              </div>
+            </div>
+
+            <div className="mt-5">
+              <label className="text-2xl font-medium">Catolicidad</label>
+              <div className="w-full mt-3">
+                <Select label="Catolicidad" color="pink" id="catolicidad-madre">
+                  <Option>Bautizo</Option>
+                  <Option>Comunión</Option>
+                  <Option>Confirmación</Option>
+                  <Option>Matrimonio</Option>
+                  <Option>Entronización</Option>
+                </Select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Datos Padre */}
+        <div className="mt-14 flex flex-col items-left justify-left">
+          <div className="w-full rounded-xl p-4 mt-1 bg-general text-3xl text-white">
+            Datos Padre
+          </div>
         </div>
       </div>
     </div>
