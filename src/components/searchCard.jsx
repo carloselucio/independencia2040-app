@@ -1,5 +1,4 @@
 import React from "react";
-import people from "../assets/jsons/people.json";
 import IndividualPerson from "./individualPerson";
 import { Link } from "react-router-dom";
 

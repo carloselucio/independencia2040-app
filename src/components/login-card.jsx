@@ -14,7 +14,7 @@ const LoginCard = () => {
         obj.email == username.current.value &&
         obj.password == password.current.value
       ) {
-        navigate("/home");
+        navigate("/");
         setaprooved(1);
         console.log("autenticado");
       } else {
