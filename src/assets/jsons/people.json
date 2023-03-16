@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "first_name": "Emilio",
+    "paternal_surname": "Rodríguez",
+    "maternal_surname": "González",
+    "person_2040": "P2040"
+  },
+  {
+    "id": 2,
+    "first_name": "Victoria",
+    "paternal_surname": "Cantú",
+    "maternal_surname": "Santos",
+    "person_2040": "P2040"
+  },
+  {
+    "id": 3,
+    "first_name": "Juan",
+    "paternal_surname": "Martínez",
+    "maternal_surname": "García",
+    "person_2040": "F2040"
+  },
+  {
+    "id": 4,
+    "first_name": "Sofía",
+    "paternal_surname": "Hernández",
+    "maternal_surname": "Martínez",
+    "person_2040": "P2040"
+  },
+  {
+    "id": 5,
+    "first_name": "Alejandro",
+    "paternal_surname": "Ramírez",
+    "maternal_surname": "Sánchez",
+    "person_2040": "P2040"
+  },
+  {
+    "id": 6,
+    "first_name": "Aixa",
+    "paternal_surname": "Sanchez",
+    "maternal_surname": "Quiroz",
+    "person_2040": "C2040"
+  }
+]

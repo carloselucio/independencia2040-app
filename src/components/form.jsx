@@ -1,6 +1,7 @@
 import React from "react";
 import Datepicker from "react-tailwindcss-datepicker";
 import { Radio, Select, Option } from "@material-tailwind/react";
+import { BookOpenIcon } from "@heroicons/react/24/solid";
 
 import { useState } from "react";
 
@@ -11,14 +12,16 @@ const Form = () => {
   });
 
   const handleValueChange = (newValue) => {
-    console.log("newValue:", newValue);
     setValue(newValue);
   };
 
   return (
     <div className="flex items-center justify-center">
       <div className="flex flex-col items-left max-w-4xl w-4/5 lg:w-full mb-12">
-        <div className="text-6xl font-bold mt-5"> Registro </div>
+        <div className="flex flex-row items-center mt-10">
+          <BookOpenIcon className="w-16 mr-5" />
+          <div className="text-6xl font-bold">Registro </div>
+        </div>
 
         {/* Datos personales */}
         <div className="mt-8 flex flex-col items-left justify-left">
