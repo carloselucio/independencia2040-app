@@ -1,28 +1,40 @@
 import Navbar from "../components/navbar";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import people from "../assets/jsons/people.json";
 import { UserGroupIcon } from "@heroicons/react/24/solid";
 import FilterCard from "../components/filterCard";
 import SearchCard from "../components/searchCard";
 
 const Personas = () => {
-  const [searchField, setSearchField] = useState("");
+  const [endpointData, setEndpointData] = useState([]);
 
-  const filteredPersons = people.filter((person) => {
-    return (
-      person.first_name.toLowerCase().includes(searchField.toLowerCase()) ||
-      person.paternal_surname.toLowerCase().includes(searchField.toLowerCase())
-    );
-  });
+  useEffect(() => {
+    fetch("http://localhost:8000/api/get_people/", {
+      method: "GET",
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        setEndpointData(data);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }, []);
 
   const handleChange = (e) => {
-    setSearchField(e.target.value);
-    console.log(e.target.value);
+    fetch("http://localhost:8000/api/get_people/" + e.target.value, {
+      method: "GET",
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        setEndpointData(data);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
   };
-
-  function searchPeople() {
-    return <SearchCard filteredPersons={filteredPersons} />;
-  }
 
   return (
     <>
@@ -45,7 +57,7 @@ const Personas = () => {
                 </div>
                 <FilterCard />
               </div>
-              {searchPeople()}
+              <SearchCard filteredPersons={endpointData} />
             </div>
           </div>
         </div>
