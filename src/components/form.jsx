@@ -955,8 +955,11 @@ const Form = ({ id }) => {
               </div>
             )}
             <div
+              disabled={id == undefined}
               className="rounded-2xl text-xl bg-general ml-5 sm:ml-20 py-3 pl-2 pr-2 text-white hover:cursor-pointer shadow-xl shadow-blue-gray-100"
-              onClick={() => navigate("/registro/familiar")}
+              onClick={() =>
+                navigate("/persona/" + id.toString() + "/familiar")
+              }
             >
               Agregar familiar
             </div>
