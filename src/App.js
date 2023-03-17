@@ -14,6 +14,7 @@ function App() {
         <Route path="/personas" element={<Personas />} />
         <Route path="/registro" element={<Registro />} />
         <Route path="/persona/:id" element={<Registro />} />
+        <Route path="/persona/:id/familiar" element={<RegistroFamiliar />} />
         <Route path="/persona/:id/edit" element={<RegistroFamiliar />} />
       </Routes>
     </>

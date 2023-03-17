@@ -24,6 +24,7 @@ const SearchCard = ({ filteredPersons }) => {
             <Link
               key={key}
               className="flex flex-row border-2 mt-3 bg-blue-gray-50 h-14 align-middle mr-3 overflow-auto mb-2 w-[700px] lg:w-auto"
+              to={`/persona/${data.id}`}
             >
               <IndividualPerson data={data} />
             </Link>

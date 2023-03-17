@@ -1,6 +1,5 @@
 import Navbar from "../components/navbar";
 import React, { useState, useEffect } from "react";
-import people from "../assets/jsons/people.json";
 import { UserGroupIcon } from "@heroicons/react/24/solid";
 import FilterCard from "../components/filterCard";
 import SearchCard from "../components/searchCard";

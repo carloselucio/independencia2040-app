@@ -6,21 +6,33 @@ const LoginCard = () => {
   const navigate = useNavigate();
   const username = useRef(null);
   const password = useRef(null);
-  const [aprooved, setaprooved] = useState(0);
+  const [aprooved, setaprooved] = useState(true);
 
   const handleSubmit = () => {
-    accounts.forEach((obj) => {
-      if (
-        obj.email == username.current.value &&
-        obj.password == password.current.value
-      ) {
-        navigate("/");
-        setaprooved(1);
-        console.log("autenticado");
-      } else {
-        setaprooved(2);
-      }
-    });
+    fetch("http://localhost:8000/api/login/", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: username.current.value,
+        password: password.current.value,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+
+        if (data.id) {
+          navigate("/");
+        } else {
+          setaprooved(false);
+        }
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
   };
 
   return (
@@ -59,7 +71,7 @@ const LoginCard = () => {
           </button>
         </div>
 
-        {aprooved === 2 && (
+        {aprooved === false && (
           <div className="font-medium text-base text-center mt-6 text-red-700">
             Usuario o contraseña no válidos
           </div>

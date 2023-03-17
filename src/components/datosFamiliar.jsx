@@ -414,11 +414,39 @@ const DatosFamiliar = () => {
               <div className="w-full mt-3">
                 <Select label="Catolicidad" color="pink" id="catolicidad-madre">
                   <Option>Bautizo</Option>
-                  <Option>Comunión</Option>
                   <Option>Confirmación</Option>
+                  <Option>Comunión</Option>
                   <Option>Matrimonio</Option>
                   <Option>Entronización</Option>
                 </Select>
+              </div>
+            </div>
+
+            {/* Catolicidad 2040 */}
+            <div className="mt-5">
+              <label className="text-2xl font-medium"> Persona2040</label>
+              <div className="flex flex-col gap-10 items-center justify-center w-full rounded-lg sm:flex-row mt-1 bg-generalYellow">
+                <Radio id="catolicidad-familiar" label="Bautizo" color="pink" />
+                <Radio
+                  id="catolicidad-familiar"
+                  label="Confirmación"
+                  color="pink"
+                />
+                <Radio
+                  id="catolicidad-familiar"
+                  label="Comunión"
+                  color="pink"
+                />
+                <Radio
+                  id="catolicidad-familiar"
+                  label="Matrimonio"
+                  color="pink"
+                />
+                <Radio
+                  id="catolicidad-familiar"
+                  label="Entronización"
+                  color="pink"
+                />
               </div>
             </div>
           </div>
