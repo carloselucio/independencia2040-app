@@ -7,4 +7,4 @@ Web App for Plan Independencia 2040
 
 2. npm install 
 
-3. npm run install
+3. npm run start
